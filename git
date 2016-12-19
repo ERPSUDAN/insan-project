@@ -4,7 +4,7 @@ you must commit befor push . commit refect to local repository and push to remot
 commit: git commit -a -m "description"
 push : git push
 always use the username and password in the first line 
-a 
+hh
 
 
 
