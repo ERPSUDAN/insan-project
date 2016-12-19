@@ -1,0 +1,11 @@
+username : workspace-projects , passwd : erp123456
+check out : git clone https://github.com/workspace-projects/insan-project.git
+you must commit befor push . commit refect to local repository and push to remote repository 
+commit: git commit -a -m "description"
+push : git push
+always use the username and password in the first line 
+a 
+
+
+
+
