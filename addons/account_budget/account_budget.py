@@ -40,6 +40,7 @@ def strToDatetime(strdate):
 # ---------------------------------------------------------
 # Budgets
 # ---------------------------------------------------------
+#test from hozifa
 class account_budget_post(osv.osv):
     _name = "account.budget.post"
     _description = "Budgetary Position"
