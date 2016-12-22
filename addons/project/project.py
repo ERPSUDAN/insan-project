@@ -1259,8 +1259,39 @@ class account_analytic_account(osv.osv):
         return super(account_analytic_account, self).name_search(cr, uid, name, args=args, operator=operator, context=context, limit=limit)
 
 
+
+class alms_payment(osv.osv):
+    _name = 'alms.payment'
+    _columns = {
+
+    'payment_ids':fields.many2one('project.project', 'payment'),
+
+
+    'payment_amount': fields.float('Payment amount'),
+    'ratio_total_amount': fields.float('The ratio of the total amount'),
+    'remaining_percentage': fields.float('The remaining percentage'),  
+
+
+    }
+
 class project_project(osv.osv):
     _inherit = 'project.project'
+
+    _columns = {
+
+        'alms': fields.many2one('res.partner','Alms Name'),
+        'Contractor': fields.many2one('res.partner','Contractor Name'),        
+        'Total_amount': fields.float('The total amount of alms'),
+        'currency': fields.many2one('res.currency','currency'),
+
+
+        'alms_payment_ids':fields.one2many('alms.payment', 'payment_ids', 'alms payment'),
+
+    
+
+    }
+
+
     _defaults = {
         'use_tasks': True
     }

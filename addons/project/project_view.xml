@@ -115,6 +115,22 @@
                                     context="{'default_groups_ref': ['base.group_user', 'base.group_partner_manager', 'project.group_project_manager']}"/>
                             <newline/>
                             <field name="partner_id" on_change="onchange_partner_id(partner_id)" string="Customer"/>
+
+                    <!-- ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
+
+                            <newline/>
+                            
+                            <field name="alms" />
+                            <newline/>
+                            <field name="Contractor" />
+                            <newline/>
+                            <field name="Total_amount" />
+                            <newline/>                            
+                            <field name="currency" />
+                            <newline/>    
+
+                    <!-- ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
+
                         </group>
                             <p attrs="{'invisible': [('analytic_account_id','=',False)]}">
                                 To invoice or setup invoicing and renewal options, go to the related contract:
@@ -179,6 +195,21 @@
                         <page string="Project Stages" attrs="{'invisible': [('use_tasks', '=', False)]}" name="project_stages">
                              <field name="type_ids"/>
                         </page>
+
+<!-- ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
+
+                        
+                            <page string="manage Alms contribution" >
+                                <field name="alms_payment_ids">
+                                <tree string="yaaaaa" editable="bottom">
+                                    <field name="payment_amount"/>
+                                    <field name="ratio_total_amount"/>
+                                    <field name="remaining_percentage"/>
+                                </tree>
+                                </field>
+                            </page>
+<!-- ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
+
                     </notebook>
                 </sheet>
                 <div class="oe_chatter">

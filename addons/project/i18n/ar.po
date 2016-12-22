@@ -1827,3 +1827,51 @@ msgstr "المهام"
 #: field:project.project,task_ids:0
 msgid "unknown"
 msgstr "غير معروف"
+
+
+
+
+#. module: project
+#: view:project.project:project.edit_project
+msgid "manage Alms contribution"
+msgstr "إدارة تبرعات المُحسِن"
+
+#. module: project
+#: field:project.project,alms:0
+msgid "Alms Name"
+msgstr "إسم المحسِن"
+
+#. module: project
+#: field:project.project,Contractor:0
+msgid "Contractor Name"
+msgstr "إسم المقاول"
+
+#. module: project
+#: field:project.project,Total_amount:0
+msgid "The total amount of alms"
+msgstr "المبلغ الكلي للمحسِن"
+
+#. module: project
+#: field:project.project,currency:0
+msgid "currency"
+msgstr "العملة"
+
+
+
+#. module: project
+#: field:alms.payment,remaining_percentage:0
+msgid "The remaining percentage"
+msgstr "المتبقي كنسبة"
+
+#. module: project
+#: field:alms.payment,ratio_total_amount:0
+msgid "The ratio of the total amount"
+msgstr "النسبة من المبلغ الكلي"
+
+#. module: project
+#: field:alms.payment,payment_amount:0
+msgid "Payment amount"
+msgstr "مبلغ الدفعية"
+
+
+
